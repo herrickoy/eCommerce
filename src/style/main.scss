@@ -1,4 +1,10 @@
 
+
+html {
+    font-size: 62.5%;
+}
+
+
 *,
 *::after,
 *::before {
@@ -11,3 +17,5 @@
 
 @import 'layout.scss';
 @import 'headerNav.scss';
+@import 'auth/signIn.scss';
+@import 'auth/signUp.scss';

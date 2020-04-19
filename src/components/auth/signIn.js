@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-class SignIn extends Component {
-  constructor(props) {
-      super(props)
+import { reduxForm, Field } from 'redux-form';
 
-      this.state = {
-          
-      }
-  }
+class SignIn extends Component {
 
   render() {
       return (
           <div className="sign-in">
               Sign Innn
           </div>
-      )
-  }
+        )
+    }
 }
+
+SignIn = reduxForm({
+    form: 'SignIn'
+})(SignIn);
+
 
 export default SignIn;

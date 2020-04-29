@@ -17,5 +17,13 @@
         & > * {
             text-decoration-line: underline;
         }
+        // .details__item {
+        //     text-decoration: none;
+        // }
     }
+
+    &__item {
+        text-decoration: none;
+    }
+
 }

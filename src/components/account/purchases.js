@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
 
-class Purchases extends Component {
-  constructor(props) {
-      super(props)
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
-      this.state = {
+class Purchases extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
           
-      }
-  }
+        }
+    }
+
+    componentDidMount() {
+        this.props.fetchUserPurchases();
+    }
 
   render() {
         const { className } = this.props;
 
         return (
             <div className={`${className} purchases`}>
-                purchases here
+                {
+                    this.props.purchases.map(purchase => {
+                        return <div>{purchase.title}</div>
+                    })
+                }
             </div>
         )
   }
 }
+
+function mapStateToProps(state) {
+    const { purchases } = state.user;
+    return { purchases };
+}
+
+Purchases = connect(mapStateToProps, actions)(Purchases);
 
 export default Purchases;

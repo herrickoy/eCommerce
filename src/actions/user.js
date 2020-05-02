@@ -4,7 +4,7 @@ import {
 } from './types';
 
 export function setPurchaseDetail(_id) {
-    return({
+    return ({
         type: SET_PURCHASE_DETAIL,
         payload: _id
     })
@@ -16,9 +16,9 @@ export function fetchUserPurchases() {
         payload: [
             {
                 _id: 0,
-                amount: 8.02,
+                total: 8.02,
                 orderNumber: 'A0048248343',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
                     name: 'Koy Herrick',
@@ -27,9 +27,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 1,
-                amount: 19.40,
+                total: 19.40,
                 orderNumber: 'B0048248352',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0001',
                 user: {
                     name: 'Gracie Herrick',
@@ -38,9 +38,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 2,
-                amount: 12.72,
+                total: 12.72,
                 orderNumber: 'C0048248367',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0002',
                 user: {
                     name: 'Lance Fred',
@@ -49,9 +49,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 3,
-                amount: 28.61,
+                total: 28.61,
                 orderNumber: 'A0048248343',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0003',
                 user: {
                     name: 'Huy Nguyen',
@@ -60,9 +60,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 4,
-                amount: 3.46,
+                total: 3.46,
                 orderNumber: 'D0048248371',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0004',
                 user: {
                     name: 'Gage Han',
@@ -71,9 +71,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 5,
-                amount: 78.84,
+                total: 78.84,
                 orderNumber: 'E0048248385',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0005',
                 user: {
                     name: 'Spencer Scholle',
@@ -82,9 +82,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 6,
-                amount: 25.87,
+                total: 25.87,
                 orderNumber: 'F0048248399',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0006',
                 user: {
                     name: 'Cait Brennan',
@@ -93,9 +93,9 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 7,
-                amount: 11.27,
+                total: 11.27,
                 orderNumber: 'G0048248407',
-                orderDate: new Date(),
+                orderDate: new Date().toDateString(),
                 creditCard: '-0007',
                 user: {
                     name: 'Arlo Herrick',
